@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7D87C"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/nota1_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        android:background="#808080"
+        android:hint="Nota 1"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nota2_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:background="#808080"
+        android:hint="Nota 2"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/nota1_et"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nota3_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        android:background="#808080"
+        android:hint="Nota 3"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nota1_et" />
+
+    <EditText
+        android:id="@+id/nota4_et"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="48dp"
+        android:background="#808080"
+        android:hint="Nota 4"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@id/nota3_et"
+        app:layout_constraintTop_toBottomOf="@id/nota2_et" />
+
+    <EditText
+        android:id="@+id/faltas_et"
+        android:layout_width="172dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="100dp"
+        android:background="#808080"
+        android:hint="Numero de faltas"
+        android:inputType="number"
+        android:padding="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nota3_et" />
+
+    <Button
+        android:id="@+id/calcular_btn"
+        android:layout_width="325dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#4F4F4F"
+        android:text="Calcular"
+        android:textColor="#FFFFFF"
+        android:textSize="21dp"
+        app:cornerRadius="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faltas_et" />
+
+    <TextView
+        android:id="@+id/resultado_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="Aluno foi Aprovado"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
