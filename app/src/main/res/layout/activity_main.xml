@@ -4,17 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F7D87C"
     android:id="@+id/main"
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/waves_top"
+        app:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-185dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wave__3_bottom"
+        app:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="536" />
+
     <EditText
-        android:id="@+id/nota1_et"
+        android:id="@+id/nota1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="88dp"
         android:background="#808080"
         android:hint="Nota 1"
         android:inputType="numberDecimal"
@@ -23,72 +36,89 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <EditText
-        android:id="@+id/nota2_et"
+        android:id="@+id/nota2"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="88dp"
         android:background="#808080"
         android:hint="Nota 2"
         android:inputType="numberDecimal"
         android:padding="20dp"
         android:text=""
-        app:layout_constraintStart_toEndOf="@id/nota1_et"
+        app:layout_constraintStart_toEndOf="@id/nota1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/nota3_et"
+        android:id="@+id/nota3"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="56dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="88dp"
         android:background="#808080"
         android:hint="Nota 3"
         android:inputType="numberDecimal"
         android:padding="20dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nota1_et" />
+        app:layout_constraintTop_toBottomOf="@id/nota1" />
 
     <EditText
-        android:id="@+id/nota4_et"
+        android:id="@+id/nota4"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="88dp"
         android:background="#808080"
         android:hint="Nota 4"
         android:inputType="numberDecimal"
         android:padding="20dp"
         android:text=""
-        app:layout_constraintStart_toEndOf="@id/nota3_et"
-        app:layout_constraintTop_toBottomOf="@id/nota2_et" />
+        app:layout_constraintStart_toEndOf="@id/nota3"
+        app:layout_constraintTop_toBottomOf="@id/nota2" />
 
     <EditText
-        android:id="@+id/faltas_et"
-        android:layout_width="172dp"
-        android:layout_height="64dp"
+        android:id="@+id/faltas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="100dp"
         android:background="#808080"
         android:hint="Numero de faltas"
         android:inputType="number"
         android:padding="20dp"
-        android:text=""
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nota3_et" />
+        app:layout_constraintTop_toBottomOf="@id/nota3" />
+
+    <EditText
+        android:id="@+id/nomeUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="100dp"
+        android:background="#808080"
+        android:hint="Insira Seu Nome"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faltas" />
 
     <Button
         android:id="@+id/calcular_btn"
         android:layout_width="325dp"
         android:layout_height="71dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="50dp"
         android:backgroundTint="#4F4F4F"
         android:text="Calcular"
@@ -97,19 +127,29 @@
         app:cornerRadius="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/faltas_et" />
+        app:layout_constraintTop_toBottomOf="@+id/nomeUser" />
 
     <TextView
-        android:id="@+id/resultado_tv"
+        android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
-        android:text="Aluno foi Aprovado"
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/waves_background"
+        android:scaleType="fitXY"/>
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
