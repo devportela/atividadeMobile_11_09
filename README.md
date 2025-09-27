@@ -1,1 +1,3 @@
-<img width="580" height="541" alt="image" src="https://github.com/user-attachments/assets/f4bbb8f6-46b2-446e-b126-20410d4b7afd" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/700c31e8-ae61-40df-a6a3-c7d0ed9e7693" alt="tela_atividadePamI" />
+</p>
